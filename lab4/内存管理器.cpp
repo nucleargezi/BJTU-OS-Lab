@@ -2,6 +2,7 @@
 #include "debug.hpp"
 #include "MeIoN_Lib/ds/seg/lazy_seg_base.hpp"
 #include "MeIoN_Lib/ds/a_monoid/max_add.hpp"
+
 //          /*  MeIoN_is_UMP45  */          codeforces id
 //              /*  MeIoN  */               luogu / atcoder id
 //  https://space.bilibili.com/285769347    My bilibili
@@ -9,10 +10,12 @@
 //    https://github.com/nucleargezi        My github
 //             /* 604223110 */              QQ
 //  勝つために努力しなければ意味のないゲームです。
+
 void pre_work() {
     std::cin.tie(nullptr)->sync_with_stdio(false);
     std::cout << std::fixed << std::setprecision(12);
 }
+
 // #define tests
 NAME MeIoN_is_UMP45() {
     meion fail = [&]() -> void {
