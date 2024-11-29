@@ -126,14 +126,9 @@ int main() {
 #endif
     pre_work();
 #ifdef tests
-#ifdef fast
-    fin >> T;
-#else
     std::cin >> T;
 #endif
-#endif
-    int n, m;
-    while (std::cin >> n >> m) { MeIoN_is_UMP45(n, m); }
+    while (T--) { MeIoN_is_UMP45(); }
 #ifdef guidingstar
     meion end = std::chrono::high_resolution_clock::now(); 
     std::chrono::duration<double> elapsed = end - start; 
