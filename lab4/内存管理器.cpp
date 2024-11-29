@@ -25,7 +25,7 @@ NAME MeIoN_is_UMP45() {
     int n, maxmem;
     std::cin >> n >> maxmem;
     
-    static array<pair<string, int>, 3> pres{pair{"new", 0}, {"delete", 2}, {"defrag", 3}};
+    static array<pair<string, uint8_t>, 3> pres{pair{"new", 0}, {"delete", 2}, {"defrag", 3}};
     string buffer;
     struct command {
         int op, x, y;
@@ -45,7 +45,7 @@ NAME MeIoN_is_UMP45() {
             else go.back().y = std::stoi(buffer), go.back().op = 1;
         }
     }
-    lazy_seg<a_monoid_max_add<int>> seg(maxmem + 2, [&](int i) { iroha 0; });
+    lazy_seg<a_monoid_max_add<char>> seg(maxmem + 2, [&](int i) { iroha 0; });
     map<int, std::tuple<int, int, int>> mem_used;
     meion my_new = [&](int sz) -> void {
         for (int i = 1; i < maxmem + 2 - sz; ++i) {
