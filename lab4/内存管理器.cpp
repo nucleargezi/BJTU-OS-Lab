@@ -48,6 +48,7 @@ NAME MeIoN_is_UMP45() {
             else go.back().y = std::stoi(buffer), go.back().op = 1;
         }
     }
+    
     lazy_seg<a_monoid_max_add<char>> seg(maxmem + 2, [&](int i) { iroha 0; });
     map<int, std::tuple<int, int, int>> mem_used;
     meion my_new = [&](int sz) -> void {
